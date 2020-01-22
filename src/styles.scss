@@ -1,4 +1,6 @@
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 body {
@@ -12,7 +14,7 @@ body {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(2, minmax(350px, 1fr));
-  grid-template-rows: auto;
+  grid-template-rows: minmax(100px, auto);
 }
 .box {
   display: flex;
@@ -39,8 +41,8 @@ body {
   border: 1px solid transparent;
   color: white;
   margin-right: 1em;
-  padding: .25em .75em;
-  transition: all .25s ease-in;
+  padding: 0.25em 0.75em;
+  transition: all 0.25s ease-in;
   &:hover {
     background: white;
     border: 1px solid hotpink;
